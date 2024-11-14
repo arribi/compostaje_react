@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Centro extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'codigo',
+        'nombre',
+        'direccion',
+        'coordinador'
+    ];
 }

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('direccion');
             $table->string('coordinador')->nullable(); // Persona responsable del proyecto en el centro
+            $table->string('logo')->nullable();
             $table->timestamps();
         });
     }
