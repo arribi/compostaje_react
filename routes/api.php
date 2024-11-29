@@ -12,8 +12,9 @@ Route::get('/user', function (Request $request) {
 
 // Por defecto Orion protege todos los endpoints a no ser que tengamos una política
 Route::group(['as' => 'api.'], function () {
-    Orion::resource('centros', CentroController::class)->names([
-        'index'   => 'api.centros.index'
-    ]);
+    // Orion::resource('centros', CentroController::class)->names([
+    //     'index'   => 'centros'
+    // ]);
+    Orion::resource('centros', CentroController::class);
     Orion::hasManyResource('centros', 'users', CentroUsersController::class);
 });

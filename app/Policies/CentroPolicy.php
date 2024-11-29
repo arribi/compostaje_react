@@ -37,7 +37,7 @@ class CentroPolicy
      */
     public function update(User $user, Centro $centro): bool
     {
-        return true;
+        return false;
     }
 
     /**
@@ -45,7 +45,7 @@ class CentroPolicy
      */
     public function delete(User $user, Centro $centro): bool
     {
-        return true;
+        return false;
     }
 
     /**
@@ -53,7 +53,7 @@ class CentroPolicy
      */
     public function restore(User $user, Centro $centro): bool
     {
-        return true;
+        return false;
     }
 
     /**
@@ -61,6 +61,6 @@ class CentroPolicy
      */
     public function forceDelete(User $user, Centro $centro): bool
     {
-        return true;
+        return false;
     }
 }
